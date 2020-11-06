@@ -20,8 +20,22 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
+/* .dancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+} */
+.bouncyDancer{
+ border:10px solid blue;
+ border-radius:20 px;
+ position: absolute;
+ animation: bounce 0.5s;
+ animation-direction: alternative;
+ animation-iteration-count: infinite;
+}
+.blinkyDancer{
+  border: 15px solid red;
+  border-radius: 20 px;
+  position: relative;
+
 }
