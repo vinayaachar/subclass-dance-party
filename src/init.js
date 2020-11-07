@@ -32,8 +32,8 @@ $(document).ready(function() {
     if (window.dancers.length > 1) {
       for (var i = 0; i < window.dancers.length; i++) {
         if (i !== window.dancers.length - 1) {
-          var a = window.dancers[i].top - window.dancers[ i+ 1].top;
-          var b = window.dancers[i].left - window.dancers[ i+ 1].left;
+          var a = window.dancers[i].top - window.dancers[i + 1].top;
+          var b = window.dancers[i].left - window.dancers[i + 1].left;
           var c = Math.sqrt( a * a + b * b );
           if (c < 300) {
             // do a jquery fadeOut
