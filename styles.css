@@ -20,22 +20,71 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-/* .dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
-} */
+
 .bouncyDancer{
  border:10px solid blue;
- border-radius:20 px;
+ border-radius: 50%;
+ width: 30px;
+ height: 30px;
  position: absolute;
  animation: bounce 0.5s;
  animation-direction: alternative;
  animation-iteration-count: infinite;
 }
-.blinkyDancer{
-  border: 15px solid red;
-  border-radius: 20 px;
-  position: relative;
 
+.blinkyDancer {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right:  100px solid transparent;
+  border-bottom: 70px  solid red;
+  border-left:   100px solid transparent;
+  -moz-transform:    rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -ms-transform:     rotate(35deg);
+  -o-transform:      rotate(35deg);
+}
+.blinkyDancer:before {
+  border-bottom: 80px solid blue;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  -webkit-transform: rotate(-35deg);
+  -moz-transform:    rotate(-35deg);
+  -ms-transform:     rotate(-35deg);
+  -o-transform:      rotate(-35deg);
+
+}
+.blinkyDancer:after {
+  position: absolute;
+  display: block;
+  color: red;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid green;
+  border-left: 100px solid transparent;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform:    rotate(-70deg);
+  -ms-transform:     rotate(-70deg);
+  -o-transform:      rotate(-70deg);
+  content: '';
+}
+.groovyDancer{
+ position: absolute;
+ background: greenyellow;
+ width: 15px;
+ height: 15px;
+ border-radius: 20px;
 }
