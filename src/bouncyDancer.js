@@ -16,6 +16,9 @@ MakeBouncyDancer.prototype.step = function() {
   this.$node.animate({width: '30px', opacity: '0.8'}, 'slow');
   this.$node.animate({height: '30px', opacity: '0.4'}, 'slow');
   this.$node.animate({width: '30px', opacity: '0.8'}, 'slow');
+  $('.bouncyDancer').mouseover(function(event) {
+    $('.bouncyDancer').css('background-color', 'orange');
+  });
 };
 
 //lineup

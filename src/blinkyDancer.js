@@ -13,6 +13,9 @@ MakeBlinkyDancer.prototype.step = function() {
   // Call parent method from subclass using call method
   MakeDancer.prototype.step.call(this);
   this.$node.toggle();
+  $('.blinkyDancer').mouseover(function(event) {
+    $('.blinkyDancer').css('background-color', 'black');
+  });
 };
 
 //lineup method

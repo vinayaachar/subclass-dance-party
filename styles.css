@@ -26,6 +26,7 @@ body, a:link, a:visited, a:active{
 }
 
 .bouncyDancer{
+  /* background-image: url('cuteboy.jpg'); */
  border:10px solid aqua;
  border-radius: 50%;
  width: 30px;

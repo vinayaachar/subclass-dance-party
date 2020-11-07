@@ -48,11 +48,11 @@ $(document).ready(function() {
   });
   $('.addLineUpButton').on('click', function(event) {
     // loop through the dancer methods
-
     for (var i = 0; i < window.dancers.length; i++) {
       // we will call each dancer.lineup()
       window.dancers[i].lineup();
     }
   });
+
 });
 

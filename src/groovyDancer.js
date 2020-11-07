@@ -18,6 +18,9 @@ MakeGroovyDancer.prototype.step = function() {
     height: '100px',
     width: '50px'
   });
+  $('.groovyDancer').mouseover(function(event) {
+    $('.groovyDancer').css('visibility', 'hidden');
+  });
 };
 
 MakeGroovyDancer.prototype.lineup = function() {
