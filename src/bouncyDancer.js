@@ -12,9 +12,9 @@ MakeBouncyDancer.prototype.constructor = MakeBouncyDancer;
 
 MakeBouncyDancer.prototype.step = function() {
   MakeDancer.prototype.step.call(this);
-  this.$node.animate({height: '30px', opacity: '0.4'}, "slow");
-  this.$node.animate({width: '30px', opacity: '0.8'}, "slow");
-  this.$node.animate({height: '30px', opacity: '0.4'}, "slow");
-  this.$node.animate({width: '30px', opacity: '0.8'}, "slow");
+  this.$node.animate({height: '30px', opacity: '0.4'}, 'slow');
+  this.$node.animate({width: '30px', opacity: '0.8'}, 'slow');
+  this.$node.animate({height: '30px', opacity: '0.4'}, 'slow');
+  this.$node.animate({width: '30px', opacity: '0.8'}, 'slow');
 };
 
