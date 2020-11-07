@@ -18,3 +18,14 @@ MakeBouncyDancer.prototype.step = function() {
   this.$node.animate({width: '30px', opacity: '0.8'}, 'slow');
 };
 
+//lineup
+
+MakeBouncyDancer.prototype.lineup = function() {
+  this.$node.css({
+    'position': 'relative',
+    'top': '30%',
+    'left': '50%',
+    'margin-le5ft': function() { return -$(this).outerWidth() / 2; },
+    'margin-top': function() { return -$(this).outerHeight() / 2; },
+  });
+};

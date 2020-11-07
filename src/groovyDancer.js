@@ -19,3 +19,13 @@ MakeGroovyDancer.prototype.step = function() {
     width: '50px'
   });
 };
+
+MakeGroovyDancer.prototype.lineup = function() {
+  this.$node.css({
+    'position': 'relative',
+    'top': '70%',
+    'right': '50%',
+    'margin-left': function() { return -$(this).outerWidth() / 2; },
+    'margin-top': function() { return -$(this).outerHeight() / 2; },
+  });
+};

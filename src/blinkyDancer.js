@@ -1,5 +1,5 @@
 var MakeBlinkyDancer = function(top, left, timeBetweenSteps) {
-  this.$node = $('<span class="blinkyDancer"></span>');
+  this.$node = $('<div class="blinkyDancer"></div>');
   MakeDancer.call(this, top, left, timeBetweenSteps, this.$node);
 };
 // prototype
@@ -15,3 +15,14 @@ MakeBlinkyDancer.prototype.step = function() {
   this.$node.toggle();
 };
 
+//lineup method
+MakeBlinkyDancer.prototype.lineup = function() {
+  console.log(this.$node.length);
+  this.$node.css({
+    'position': 'relative',
+    'left': '50%',
+    'top': '50%',
+    'margin-left': function() { return -$(this).outerWidth() / 2; },
+    'margin-top': function() { return -$(this).outerHeight() / 2; },
+  });
+};
